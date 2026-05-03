@@ -37,15 +37,15 @@ cargo run
 
 ## 真实数据目录约定
 
-默认根目录为 `assets/datasets`，可通过环境变量覆盖。
+默认根目录为 `datasets`，可通过环境变量覆盖。
 
-- `assets/datasets/mnist`
-- `assets/datasets/fashion-mnist`
-- `assets/datasets/cifar-10-batches-bin`
+- `datasets/mnist`
+- `datasets/fashion-mnist`
+- `datasets/cifar-10-batches-bin`
 
 ## 可配置环境变量
 
-- `KAN_DATASETS_ROOT`：数据根目录，默认 `assets/datasets`。
+- `KAN_DATASETS_ROOT`：数据根目录，默认 `datasets`。
 - `KAN_EPOCHS`：训练轮数，默认 `1`。
 - `KAN_BATCH_SIZE`：batch 大小，默认 `64`。
 - `KAN_LR`：学习率，默认 `1e-2`。
@@ -55,7 +55,7 @@ cargo run
 示例：
 
 ```bash
-$env:KAN_DATASETS_ROOT="assets/datasets"
+$env:KAN_DATASETS_ROOT="datasets"
 $env:KAN_EPOCHS="2"
 $env:KAN_BATCH_SIZE="128"
 $env:KAN_LR="0.005"

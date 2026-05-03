@@ -29,7 +29,7 @@ fn main() {
 
     // 若存在真实数据目录，则自动执行最小实验脚手架。
     let training_config = TrainingConfig::from_env();
-    let datasets_root = env::var("KAN_DATASETS_ROOT").unwrap_or_else(|_| "assets/datasets".to_string());
+    let datasets_root = env::var("KAN_DATASETS_ROOT").unwrap_or_else(|_| "datasets".to_string());
     if let Err(error) =
         run_real_dataset_experiments_if_available(&datasets_root, device, &training_config)
     {
